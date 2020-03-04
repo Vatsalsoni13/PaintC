@@ -344,6 +344,13 @@ void pencil()
 	}
 
 }
+
+
+void fill(int x , int y, int new_col){
+    flood(x,y,GREEN,getpixel(x,y));
+    putpixel(x,y,new_col);
+}
+
 void main()
 {
 	int gd=DETECT,gm;
